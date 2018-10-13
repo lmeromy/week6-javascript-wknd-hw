@@ -1,0 +1,55 @@
+body {
+  font-family: Helvetica;
+  background-image:url("http://eskipaper.com/images/awesome-healthy-wallpaper-1.jpg");
+}
+
+h1, h2{
+  display: flex;
+  justify-content: center;
+  background: rgba(100, 255, 255, 0.6);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 10px;
+}
+
+h4{
+  display: flex;
+  justify-content: center;
+  background: rgba(200, 200, 255, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+#new-recipe-form {
+  display: flex;
+  /* 50% transparent bckgrnd with white */
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  /* margin-left: auto;
+  margin-right: auto; */
+
+
+}
+
+#recipe-list {
+  background: rgba(255, 255, 255, 0.5);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  /* grid-auto-flow: row dense; */
+  padding: 10px;
+}
+
+.btn, #delete-all {
+  font-size: 18px;
+  padding: 5px;
+}
+
+li {
+  list-style-type: none;
+}

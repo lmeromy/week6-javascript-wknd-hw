@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Best Recipes</title>
+  <link rel="stylesheet" type = "text/css" media = "screen" href="css/main.css"/>
+  <script src="js/recipe_app.js"></script>
+</head>
+<body>
+
+  <h1>Leah's Go-To Recipes</h1>
+
+  <form id="new-recipe-form">
+    <div class="form-item">
+      <label for="recipeTitle">Recipe Title</label>
+      <input type="text" id="recipeTitle" required/>
+    </div>
+
+    <div class="form-item">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="" disabled selected></option>
+        <option id="breakfast" value="breakfast">Breakfast</option>
+        <option id="lunch" value="lunch">Lunch</option>
+        <option id="dinner" value="dinner">Dinner</option>
+        <option id="snack" value="snack">Snack</option>
+        <option id="dessert" value="dessert">Dessert</option>
+      </select>
+    </div>
+
+    <!-- <div class="form-item">
+    <label for="prepTime">Recipe Title</label>
+    <input type="text" id="prepTime" required/> -->
+    <!-- change this input type to time!? -->
+    <!-- </div> -->
+
+    <div class="form-item">
+      <label for="ingredients">Key Ingredients:</label>
+      <input type="text" id="ingredients" required/>
+      <!-- make into input list at some point? -->
+    </div>
+
+    <div class="form-item">
+      <label for="instructions">How-To:</label>
+      <input type="text" id="instructions" required/>
+    </div>
+
+    <input type="submit" class="btn" value="Save Recipe"/>
+
+  </form>
+
+  <h2>My Recipes</h2>
+  <div id="recipe-list"></div>
+
+
+  <div class="btn">
+    <button id="delete-all">Delete All</button>
+  </div>
+
+</body>
+</html>
